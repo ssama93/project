@@ -9,10 +9,7 @@
 <body>
 <%= "text2.jsp" %>
 <%= "text2. local edit jsp" %>
-<<<<<<< HEAD
 <%= "text2. local edit2 jsp" %>
-=======
 <%= "text2.  edit jsp" %>
->>>>>>> refs/remotes/origin/master
 </body>
 </html>
