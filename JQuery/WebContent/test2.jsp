@@ -9,5 +9,6 @@
 <body>
 <%= "text2.jsp" %>
 <%= "text2. local edit jsp" %>
+<%= "text2.  edit jsp" %>
 </body>
 </html>
