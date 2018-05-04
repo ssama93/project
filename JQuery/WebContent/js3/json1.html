@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+	  $.getJSON('json1.jsp' , function(data){
+		  $.each(data,function(index, js){
+				$('body').append(js.id+","+js.pass+","+js.name+"<br>");
+			});
+		  });
+	  });
+</script>
+</head>
+<body>
+
+</body>
+</html>

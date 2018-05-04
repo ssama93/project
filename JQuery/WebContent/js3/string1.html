@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+	 //대상 파일 $(대상).함수()  &.함수(대상변수,) $.함수(대상파일,)
+	 $.ajax('string1.jsp',{
+		 success: function(data){
+			 //alert(data);
+			 $('body').append(data);
+			 }
+	 });
+	
+		 $('#btn').click(function(){
+			$.ajax('string1-1.jsp',{
+				success: function(data){
+					$('div').append(data);
+				}
+				
+			}); 
+		 	$(this).unbind();
+		 });
+		 
+		 
+		 
+		 });
+			 
+
+
+</script>
+</head>
+<body>
+<input type="button" value="버튼" id="btn">
+<div>내용</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script src="../js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+   $(document) .ready(function(){
+      $.getJSON('json2.jsp', function(data){
+            // . each(data,)
+            // body 태그 출력
+         $.each(data,function(index,it){
+            // table 태그 뒷부분에 추가 하겠다.
+            // item.name , item.age
+            $('table').append('<tr><td>'+it.id+'</td><td>'+it.pass+'</td><td>'+it.name+'</td></tr>');
+            
+         });
+      });
+   });
+
+</script>
+</head>
+<body>
+<!-- js3/json2.html -->
+<table border="1">
+<tr><th>아이디</th><th>비밀번호</th><th>이름</th></tr>
+</table>
+</body>
+</html>
