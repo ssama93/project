@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%= "text1.jsp" %>
+<%= "text2.jsp" %>
 </body>
 </html>
